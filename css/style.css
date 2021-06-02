@@ -414,7 +414,7 @@ video {
   width: 80%;
   height: auto;
 }
-video-shoes {
+.video-shoes {
   width: 45%;
   height: auto;
 }
@@ -428,10 +428,7 @@ video-shoes {
     }
     .container-display {
         position: relative;
-        width: 75%;
         /*indicador*/
-        
-        margin-left: 200px;
     }
     .boton-slider {
         border-radius: 100%;

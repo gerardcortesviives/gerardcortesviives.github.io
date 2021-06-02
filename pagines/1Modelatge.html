@@ -33,8 +33,47 @@
             <div class="box-flex2">
                <video src="../videos/Casa%20(convert-video-online.com).mp4" controls > </video>
                 <video src="../videos/Ak%20(convert-video-online.com).mp4" controls > </video>
-                 <img src="../Images/Portfoli/1622114793245.jpg" class="alien bigg">
                    <div>
+                   <!--SLIDER-->
+       
+        <div class="sliderr" id="sliderr">
+            <div class="container-display">
+                <img src="../Images/Portfoli/alien/1622114793245.jpg" class="alien bigg mySlides">
+                <img src="../Images/Portfoli/alien/1622642892956.jpg" class="alien bigg mySlides">
+               <img src="../Images/Portfoli/alien/1622642892960.jpg" class="alien bigg mySlides">
+               <img src="../Images/Portfoli/alien/1622642892965.jpg" class="alien bigg mySlides">
+               
+                <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            <!--Script JS-->
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+            </script>
+                            
+
+ 
+
+        
+        </div> 
                   <button  class="Vboto-flex actiu " onclick="window.location.href='/index.html';"><a>Home</a></button>
                   </div>
             </div>
