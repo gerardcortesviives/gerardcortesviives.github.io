@@ -24,18 +24,61 @@
 
 <div id="work" class="viives"> 
                <div class="box-xarxes">
+                  <a href="https://www.tiktok.com/@viives__?lang=es"><img class="png" src="../Images/TikTok.png"></a>
                    <a href="https://www.instagram.com/viives__/?hl=es"> <img class="png" src="../Images/pngwing.com.png"></a>
                    
                    <a href="https://www.behance.net/gerardcortes"><img class="png" src="../Images/PngItem_1903277.png"></a>
+                   <a href="Pdf/Gerard_Cort%C3%83%C2%A9s_CV%20(3).pdf"><img class="png" src="../Images/Logos/CV.png"></a>
         </div>
-        <h1> ViiVES-MÉS</h1>
+        <h1> ViiVES-MÁS</h1>
         <div class="V-text"> 
             <div class="box-flex2">
-               <img src="../Images/Portfoli/1622116456917.jpg" class="alien bigg">
+                              <!--SLIDER-->
+       
+        <div class="sliderr" id="sliderr">
+            <div class="container-display">
+                <img src="../Images/Portfoli/shoes/1622116456917.jpg" class="alien bigg mySlides">
+                 <img src="../Images/Portfoli/shoes/1622643737104.jpg" class="alien bigg mySlides">
+                  <img src="../Images/Portfoli/shoes/1622643737109.jpg" class="alien bigg mySlides">
+                <img src="../Images/Portfoli/shoes/1622643737099.jpg" class="alien bigg mySlides">
                
-                <video src="../videos/TikTok.mp4" class="alien" controls></video>
+                <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            <!--Script JS-->
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+            </script>
+                            
+
+ 
+
+        
+        </div> 
+              
+               
+                <video src="../videos/TikTok.mp4" class="video-shoes video5" controls></video>
                    <div>
-                  <button  class="Vboto-flex actiu " onclick="window.location.href='/index.html';"><a>Home</a></button>
+                   
+                  <button  class="Vboto-flex actiu " onclick="window.location.href='/index.html';"><a>Inicio</a></button>
                   </div>
             </div>
         </div>
