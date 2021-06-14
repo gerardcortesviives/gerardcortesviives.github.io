@@ -69,11 +69,26 @@ h1 {
     letter-spacing: 4px;
 }
 
+p{
+    font-family: 'Libre Baskerville', serif;
+    font-size:1.2em;
+    letter-spacing: 1.5px;
+    margin-left:50px;
+    color:black;
+}
 h3{
     font-size: 1em;
     letter-spacing: 1.5px;
     color:gray; 
     text-align: center;
+}
+h6{
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    line-height : 40px;
 }
 
 a{ 
@@ -156,7 +171,6 @@ a{
     background: none;
     flex-wrap: wrap;
     text-align: center;
-    color: black;
     font-size: 1.5em;
     
 }
@@ -164,8 +178,7 @@ a{
 .box-flex2{
     flex:auto;
     padding: 100px;
-    text-align: center;
-    color: black;   
+    text-align: center;  
     margin: 7px;
     border: none;
     background-color: rgba(253, 252, 233);
@@ -177,11 +190,10 @@ a{
 }
 
 p{ 
-    font-size: 1.5em;
-    letter-spacing: 2.5px;
-    color:white;
+    font-size: 1.7em;
+    letter-spacing: 5.5px;
+    color:black;
     text-align: center;
-    
 }
 
 akimage{
@@ -478,9 +490,12 @@ video {
     justify-content: center;
 }
 .bottomborder{
-    border-bottom: 5px solid black;
+    
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.padding{
+    padding: 50px;
 }
 
  
